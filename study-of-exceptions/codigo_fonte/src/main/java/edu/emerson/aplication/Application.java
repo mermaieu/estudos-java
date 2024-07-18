@@ -9,7 +9,7 @@ public class Application {
             
             
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.err.println("Você tentou acessar uma posicão inexistente no array.");
+            System.err.println("Você tentou acessar uma posicão inexistente no array");
         
         } catch (ArithmeticException e) {
             System.err.println("Não existe divisão por zero");
