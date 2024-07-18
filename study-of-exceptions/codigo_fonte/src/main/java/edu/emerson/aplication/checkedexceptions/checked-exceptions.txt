@@ -1,0 +1,65 @@
+
+1. DEFINICÃO
+
+As Checked Exceptions (Exceções Checadas) são exceções que 
+representam condições inválidas em áreas fora do controle 
+imediato do programa, como: 
+
+    - Problemas de entradas inválidas do usuário; 
+    - Falhas de rede;
+    - Arquivos ausentes; etc.
+
+São subclasses de Exception.
+
+
+2. A OBRIGACÃO DO MÉTODO QUE LANCA A EXCECÃO CHECADA:
+
+Um método que lanca uma checked exception É OBRIGADO a declarar,
+em sua assinatura, que lanca essa excecão.
+Isso é feito usando a palavra-chave throws.
+
+ex: public static String formatarCep(String cep) throws CepInvalidoException{
+        f(cep.length() != 8)
+          throw new CepInvalidoException("O cep precisa ter oito números.");
+
+          // Implementacao da lógica de formatacao
+
+          // simulando um cep formatado
+          return "65054-040"
+    }
+
+
+Se omitirmos a palavra-chave throws do método formatarCep, 
+o compilador irá gerar um erro em tempo de compilação. 
+
+Isto porque, ao contrário das unchecked exception, 
+as checked exceptions não podem ser propagadas sem o 
+uso da palavra-chave throws.
+
+
+3. TRATANDO A CHECKED EXCEPTION:
+
+As exceções checadas são aquelas que 
+o compilador EXIGE que você trate explicitamente.
+
+Quando um métodoA lança uma exceção checada, o compilador 
+verifica se o métodoB que o chama está tratando essa exceção.
+
+Se o métodoB (chamador) não tratar a exceção, ele deve 
+declarar que também a lança (usando throws) em sua própria assinatura.
+
+Obs:
+    É uma boa prática tratar a excecão checada no chamador
+    do método que lança a exceção.
+
+    E, por padrão, é o que de fato deve ser feito.
+
+
+4. O QUE ACONTECE SE NÃO FOR TRATADA:
+
+O compilador verificará se a exceção checada é tratada 
+localmente (usando try-catch) ou se é propagada (usando throws) no método.
+
+Se a exceção não for tratada nem propagada, o compilador emitirá um erro de compilação.
+
+Isso significa que o código não será compilado até que a exceção seja tratada ou propagada.

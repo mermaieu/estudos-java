@@ -1,0 +1,18 @@
+
+1. DEFINICÃO:
+
+Unchecked Exceptions são aquelas que o desenvolvedor 
+não é obrigado a tratar explicitamente.
+
+Representam defeitos no programa (bugs).
+
+São subclasses de RuntimeException.
+
+
+2. NÃO-OBRIGACÃO DO MÉTODO:
+
+Um método não é obrigado a estabelecer uma política 
+para as exceções não checadas lançadas por sua execução 
+(e quase sempre nunca o fazem).
+
+
