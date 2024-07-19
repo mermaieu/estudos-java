@@ -9,7 +9,10 @@ imediato do programa, como:
     - Falhas de rede;
     - Arquivos ausentes; etc.
 
-São subclasses de Exception.
+São subclasses diretas de Exception.
+Diferentemente das unchecked exceptions, que são
+subclasses de RuntimeException que, por sua vez,
+é subclasse de Exception.
 
 
 2. A OBRIGACÃO DO MÉTODO QUE LANCA A EXCECÃO CHECADA:
