@@ -29,7 +29,7 @@ public interface Phone {
     /**
      * Exclui um contato existente.
      * 
-     * @param contato A sequência de caracteres que representa o contato a ser excluído.
+     * @param contato O nome do contato a ser excluído.
      */
     public void excluirContato(String contato);
 
