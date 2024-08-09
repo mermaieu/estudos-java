@@ -11,8 +11,8 @@ Este projeto é uma proposta de modelagem do iPhone, onde a classe `Iphone` impl
 
 ## Funcionalidades
 - **Reprodução de Música**: Métodos para tocar, pausar, e mudar de música.
-- **Funcionalidades de Telefone**: Métodos para fazer e receber chamadas, e gerenciar contatos.
-- **Navegação na Internet**: Métodos para abrir URLs e navegar em páginas web.
+- **Funcionalidades de Telefone**: Métodos para fazer chamadas, receber chamadas, e gerenciar contatos.
+- **Navegação na Internet**: Métodos para navegar em páginas web.
 
 ## Pré-requisitos
 - Java 8 ou superior
