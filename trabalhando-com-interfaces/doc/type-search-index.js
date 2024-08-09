@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.device.interfaces","l":"Browser"},{"p":"edu.device","l":"Iphone"},{"p":"edu.device.interfaces","l":"Ipod"},{"p":"edu.device.interfaces","l":"Phone"}];updateSearchResults();
